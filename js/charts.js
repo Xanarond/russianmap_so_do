@@ -1,459 +1,318 @@
-let v_cbm = document.getElementById('v_cbm').getContext('2d');
-new Chart(v_cbm, {
+Chart.pluginService.register({
+    beforeDraw: function (chart) {
+        if (chart.config.options.elements.center) {
+            //Get ctx from string
+            var ctx = chart.chart.ctx;
+
+            //Get options from the center object in options
+            var centerConfig = chart.config.options.elements.center;
+            var fontStyle = centerConfig.fontStyle || 'Arial';
+            var txt = centerConfig.text;
+            var color = centerConfig.color || '#000';
+            var sidePadding = centerConfig.sidePadding || 20;
+            var sidePaddingCalculated = (sidePadding/100) * (chart.innerRadius * 2)
+            //Start with a base font of 30px
+            ctx.font = "30px " + fontStyle;
+
+            //Get the width of the string and also the width of the element minus 10 to give it 5px side padding
+            var stringWidth = ctx.measureText(txt).width;
+            var elementWidth = (chart.innerRadius * 2) - sidePaddingCalculated;
+
+            // Find out how much the font can grow in width.
+            var widthRatio = elementWidth / stringWidth;
+            var newFontSize = Math.floor(30 * widthRatio);
+            var elementHeight = (chart.innerRadius * 2);
+
+            // Pick a new font size so it will not be larger than the height of label.
+            var fontSizeToUse = Math.min(newFontSize, elementHeight);
+
+            //Set font settings to draw it correctly.
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            var centerX = ((chart.chartArea.left + chart.chartArea.right) / 2);
+            var centerY = ((chart.chartArea.top + chart.chartArea.bottom) / 2);
+            ctx.font = fontSizeToUse+"px " + fontStyle;
+            ctx.fillStyle = color;
+
+            //Draw text in center
+            ctx.fillText(txt, centerX, centerY);
+        }
+    }
+});
+
+let total = document.getElementById('total').getContext('2d');
+new Chart(total, {
     // The type of chart we want to create
-    type: 'horizontalBar',
+    type: 'doughnut',
     // The data for our dataset
     data: {
-        labels: ["CTV", "HA"],
+        labels: ["В транзите", "Доставка сегодня", "Доставлено в контрактный срок", "Опоздало", "Под вопросом"],
         datasets: [
             {
-                backgroundColor: ['rgb(255,192,0)', 'rgb(0, 176, 240)'],
-                data: data_out_cbm,
+                backgroundColor: ['rgb(255,248,0)', 'rgb(146,208,80)', 'rgb(0,176,80)',
+                    'rgb(255,0,0)', 'rgb(255,192,0)'],
+                data: [73, 26, 10, 4, 3],
+            }
+        ],
+    },
+
+
+    options: {
+        elements: {
+            /*center: {
+                text: '100',
+                color: '#ffffff', //Default black
+                fontStyle: 'Helvetica', //Default Arial
+                sidePadding: 20 //Default 20 (as a percentage)
+            }*/
+        },
+        legend: {
+            display: true,
+            color: '#ffffff', //Default black
+            fontStyle: 'Helvetica', //Default Arial
+        },
+    }
+});
+
+
+let central_reg = document.getElementById('central_reg').getContext('2d');
+new Chart(central_reg, {
+    // The type of chart we want to create
+    type: 'doughnut',
+    // The data for our dataset
+    data: {
+        labels: ["В транзите", "Доставка сегодня", "Доставлено в контрактный срок", "Опоздало", "Под вопросом"],
+        datasets: [
+            {
+                backgroundColor: ['rgb(255,248,0)', 'rgb(146,208,80)', 'rgb(0,176,80)',
+                    'rgb(255,0,0)', 'rgb(255,192,0)'],
+                data: [73, 26, 10, 4, 0],
+            }
+        ],
+    },
+
+
+    options: {
+        animation : false,
+        elements: {
+            center: {
+                text: '100',
+                color: '#ffffff', //Default black
+                fontStyle: 'Helvetica', //Default Arial
+                sidePadding: 20 //Default 20 (as a percentage)
+            }
+        },
+        legend: {
+            display: false
+        },
+        title: {
+            display: true,
+            text: 'Central',
+            fontColor: '#ffffff',
+            fontSize: 14,
+        }
+    }
+});
+
+
+let south_reg = document.getElementById('south_reg').getContext('2d');
+new Chart(south_reg, {
+    // The type of chart we want to create
+    type: 'doughnut',
+    // The data for our dataset
+    data: {
+        labels: ["В транзите", "Доставка сегодня", "Доставлено в контрактный срок", "Опоздало", "Под вопросом"],
+        datasets: [
+            {
+                backgroundColor: ['rgb(255,248,0)', 'rgb(146,208,80)', 'rgb(0,176,80)',
+                    'rgb(255,0,0)', 'rgb(255,192,0)'],
+                data: [73, 26, 10, 4, 0],
             }
         ],
     },
 
     // Configuration options go here
     options: {
+        animation : false,
         legend: {
             display: false
         },
-        scales: {
-            xAxes: [
-                {
-                    gridLines: {
-                        display: false,
-                        color: "#fff" // this here
-                    },
-                    ticks: {
-                        beginAtZero: true,
-                        fontColor: "#fff",
-                    }
-                }],
-            yAxes: [
-                {
-                    gridLines: {
-                        display: false,
-                        color: "#fff"
-                    },
-                    ticks: {
-                        fontColor: "#fff",
-                    }
-                }]
-        }
     }
 });
 
-let v_truck = document.getElementById('v_truck').getContext('2d');
-new Chart(v_truck, {
+
+let caucasian_reg = document.getElementById('caucasian_reg').getContext('2d');
+new Chart(caucasian_reg, {
     // The type of chart we want to create
-    type: 'bar',
-    // The data for our dataset
-
-    data: {
-        labels: ["Moscow", "Region", "SDS", "C.P"],
-        datasets: [
-            {
-                backgroundColor: ['rgb(0,176,240)', 'rgb(255,192,0)', 'rgb(0,176,240)', 'rgb(255,192,0)'],
-                data: arrsum,
-            },
-        ]
-    },
-
-    // Configuration options go here
-    options: {
-        legend: {
-            display: false
-        },
-        scales: {
-            yAxes: [{
-                gridLines: {
-                    display: false,
-                    color: "#fff" // this here
-                },
-                ticks: {
-                    fontColor: "#fff",
-                    beginAtZero: true
-                }
-            }],
-            xAxes: [{
-                gridLines: {
-                    display: false,
-                    color: "#fff" // this here
-                },
-                ticks: {
-                    fontColor: "#fff",
-                    beginAtZero: true
-                }
-            }]
-        }
-    }
-});
-
-let vbct_cbm = document.getElementById('vbct_cbm').getContext('2d');
-new Chart(vbct_cbm, {
-    // The type of chart we want to create
-    type: 'bar',
-    // The data for our dataset
-
-    data: {
-        labels: ["Moscow", "Aksay", "Nizhniy Novgorod", "Novosibirsk", "Kazan", "Izhevsk", "Other"],
-        datasets: [
-            {
-                backgroundColor: 'rgb(255,192,0)',
-                data: data_vbc,
-            },
-        ]
-    },
-
-    // Configuration options go here
-    options: {
-        legend: {
-            display: false
-        },
-        scales: {
-            yAxes: [{
-                gridLines: {
-                    display: false,
-                    color: "#fff" // this here
-                },
-                ticks: {
-                    fontColor: "#fff",
-                    beginAtZero: true
-                }
-            }],
-            xAxes: [{
-                gridLines: {
-                    display: false,
-                    color: "#fff" // this here
-                },
-                ticks: {
-                    fontColor: "#fff",
-                    beginAtZero: true
-                }
-            }]
-        }
-    }
-});
-
-let vbp_cbm = document.getElementById('vbp_cbm').getContext('2d');
-new Chart(vbp_cbm, {
-    // The type of chart we want to create
-    type: 'bar',
-    // The data for our dataset
-
-    data: {
-        labels: ["CTV", "WM", "REF", "VC", "MWO", "MNT", "Other"],
-        datasets: [
-            {
-                backgroundColor: 'rgb(255,192,0)',
-                data: data_vbp,
-            },
-        ]
-    },
-
-    // Configuration options go here
-    options: {
-        legend: {
-            display: false
-        },
-        scales: {
-            yAxes: [{
-                gridLines: {
-                    display: false,
-                    color: "#fff" // this here
-                },
-                ticks: {
-                    fontColor: "#fff",
-                    beginAtZero: true
-                }
-            }],
-            xAxes: [{
-                gridLines: {
-                    display: false,
-                    color: "#fff" // this here
-                },
-                ticks: {
-                    fontColor: "#fff",
-                    beginAtZero: true
-                }
-            }]
-        }
-    }
-});
-
-let vbc_cbm = document.getElementById('vbc_cbm').getContext('2d');
-new Chart(vbc_cbm, {
-    // The type of chart we want to create
-    type: 'bar',
-    // The data for our dataset
-
-    data: {
-        labels: ["MBM", "DNS Retail", "Haskel", "Nosimo", "TD Absolute", "CRS", "Other"],
-        datasets: [
-            {
-                backgroundColor: 'rgb(255,255,255)',
-                data: data_vbcs,
-            },
-        ]
-    },
-
-    // Configuration options go here
-    options: {
-        legend: {
-            display: false
-        },
-        scales: {
-            yAxes: [{
-                gridLines: {
-                    display: false,
-                    color: "#fff" // this here
-                },
-                ticks: {
-                    fontColor: "#fff",
-                    beginAtZero: true
-                }
-            }],
-            xAxes: [{
-                gridLines: {
-                    display: false,
-                    color: "#fff" // this here
-                },
-                ticks: {
-                    fontColor: "#fff",
-                    beginAtZero: true
-                }
-            }]
-        }
-    }
-});
-
-let vbp_truck = document.getElementById('vbp_truck').getContext('2d');
-new Chart(vbp_truck, {
-    // The type of chart we want to create
-    type: 'horizontalBar',
-    // The data for our dataset
-
-    data: {
-        labels: ["L.D", "Export",],
-        datasets: [
-            {
-                backgroundColor: ['rgb(255,255,255)', 'rgb(110,110,110)'],
-                data: data_ldexp,
-            },
-        ]
-    },
-
-    // Configuration options go here
-    options: {
-        legend: {
-            display: false
-        },
-        scales: {
-            yAxes: [{
-                gridLines: {
-                    display: false,
-                    color: "#fff" // this here
-                },
-                ticks: {
-                    fontColor: "#fff",
-                    beginAtZero: true
-                }
-            }],
-            xAxes: [{
-                gridLines: {
-                    display: false,
-                    color: "#fff" // this here
-                },
-                ticks: {
-                    fontColor: "#fff",
-                    beginAtZero: true
-                }
-            }]
-        }
-    }
-});
-
-let vol_cbm = document.getElementById('vol_cbm').getContext('2d');
-new Chart(vol_cbm, {
-    // The type of chart we want to create
-    type: 'horizontalBar',
+    type: 'doughnut',
     // The data for our dataset
     data: {
-        labels: ["SERK", "Import"],
+        labels: ["В транзите", "Доставка сегодня", "Доставлено в контрактный срок", "Опоздало", "Под вопросом"],
         datasets: [
             {
-                backgroundColor: ['rgb(255,192,0)', 'rgb(0,176,240)'],
-                data: data_inb_cbm,
+                backgroundColor: ['rgb(255,248,0)', 'rgb(146,208,80)', 'rgb(0,176,80)',
+                    'rgb(255,0,0)', 'rgb(255,192,0)'],
+                data: [73, 26, 10, 4, 0],
             }
         ],
     },
 
     // Configuration options go here
     options: {
+        animation : false,
         legend: {
             display: false
         },
-        scales: {
-            xAxes: [
-                {
-                    gridLines: {
-                        display: false,
-                        color: "#fff" // this here
-                    },
-                    ticks: {
-                        beginAtZero: true,
-                        fontColor: "#fff",
-                    }
-                }],
-            yAxes: [
-                {
-                    gridLines: {
-                        display: false,
-                        color: "#fff"
-                    },
-                    ticks: {
-                        fontColor: "#fff",
-                    }
-                }]
-        }
     }
 });
 
-let vol_truck = document.getElementById('vol_truck').getContext('2d');
-new Chart(vol_truck, {
+let privolzh_reg = document.getElementById('privolzh_reg').getContext('2d');
+new Chart(privolzh_reg, {
     // The type of chart we want to create
-    type: 'horizontalBar',
+    type: 'doughnut',
     // The data for our dataset
     data: {
-        labels: ["SERK", "Import"],
+        labels: ["В транзите", "Доставка сегодня", "Доставлено в контрактный срок", "Опоздало", "Под вопросом"],
         datasets: [
             {
-                backgroundColor: ['rgb(255,192,0)', 'rgb(0,176,240)'],
-                data: data_inb_tr,
+                backgroundColor: ['rgb(255,248,0)', 'rgb(146,208,80)', 'rgb(0,176,80)',
+                    'rgb(255,0,0)', 'rgb(255,192,0)'],
+                data: [73, 26, 10, 4, 0],
             }
         ],
     },
 
     // Configuration options go here
     options: {
+        animation : false,
         legend: {
             display: false
         },
-        scales: {
-            xAxes: [
-                {
-                    gridLines: {
-                        display: false,
-                        color: "#fff" // this here
-                    },
-                    ticks: {
-                        beginAtZero: true,
-                        fontColor: "#fff",
-                    }
-                }],
-            yAxes: [
-                {
-                    gridLines: {
-                        display: false,
-                        color: "#fff"
-                    },
-                    ticks: {
-                        fontColor: "#fff",
-                    }
-                }]
-        }
     }
 });
 
-let vbct_cbm2 = document.getElementById('vbct_cbm2').getContext('2d');
-new Chart(vbct_cbm2, {
+let crimea_reg = document.getElementById('crimea_reg').getContext('2d');
+new Chart(crimea_reg, {
     // The type of chart we want to create
-    type: 'bar',
+    type: 'doughnut',
     // The data for our dataset
-
     data: {
-        labels: ["CTV", "WM", "REF", "VC", "MWO", "MNT", "Other"],
+        labels: ["В транзите", "Доставка сегодня", "Доставлено в контрактный срок", "Опоздало", "Под вопросом"],
         datasets: [
             {
-                backgroundColor: 'rgb(255,192,0)',
-                data: data_inbp,
-            },
-        ]
+                backgroundColor: ['rgb(255,248,0)', 'rgb(146,208,80)', 'rgb(0,176,80)',
+                    'rgb(255,0,0)', 'rgb(255,192,0)'],
+                data: [73, 26, 10, 4, 0],
+            }
+        ],
     },
 
     // Configuration options go here
     options: {
+        animation : false,
         legend: {
             display: false
         },
-        scales: {
-            yAxes: [{
-                gridLines: {
-                    display: false,
-                    color: "#fff" // this here
-                },
-                ticks: {
-                    fontColor: "#fff",
-                    beginAtZero: true
-                }
-            }],
-            xAxes: [{
-                gridLines: {
-                    display: false,
-                    color: "#fff" // this here
-                },
-                ticks: {
-                    fontColor: "#fff",
-                    beginAtZero: true
-                }
-            }]
-        }
     }
 });
 
-let vbpr_cbm = document.getElementById('vbpr_cbm').getContext('2d');
-new Chart(vbpr_cbm, {
-    // The type of chart we want to create
-    type: 'bar',
-    // The data for our dataset
 
+let northwest_reg = document.getElementById('northwest_reg').getContext('2d');
+new Chart(northwest_reg, {
+    // The type of chart we want to create
+    type: 'doughnut',
+    // The data for our dataset
     data: {
-        labels: ["CTV", "WM", "REF", "VC", "MWO", "MNT", "Other"],
+        labels: ["В транзите", "Доставка сегодня", "Доставлено в контрактный срок", "Опоздало", "Под вопросом"],
         datasets: [
             {
-                backgroundColor: 'rgb(255,192,0)',
-                data: data_inbpq,
-            },
-        ]
+                backgroundColor: ['rgb(255,248,0)', 'rgb(146,208,80)', 'rgb(0,176,80)',
+                    'rgb(255,0,0)', 'rgb(255,192,0)'],
+                data: [73, 26, 10, 4, 0],
+            }
+        ],
     },
 
     // Configuration options go here
     options: {
+        animation : false,
         legend: {
             display: false
         },
-        scales: {
-            yAxes: [{
-                gridLines: {
-                    display: false,
-                    color: "#fff" // this here
-                },
-                ticks: {
-                    fontColor: "#fff",
-                    beginAtZero: true
-                }
-            }],
-            xAxes: [{
-                gridLines: {
-                    display: false,
-                    color: "#fff" // this here
-                },
-                ticks: {
-                    fontColor: "#fff",
-                    beginAtZero: true
-                }
-            }]
-        }
+    }
+});
+
+let ural_reg = document.getElementById('ural_reg').getContext('2d');
+new Chart(ural_reg, {
+    // The type of chart we want to create
+    type: 'doughnut',
+    // The data for our dataset
+    data: {
+        labels: ["В транзите", "Доставка сегодня", "Доставлено в контрактный срок", "Опоздало", "Под вопросом"],
+        datasets: [
+            {
+                backgroundColor: ['rgb(255,248,0)', 'rgb(146,208,80)', 'rgb(0,176,80)',
+                    'rgb(255,0,0)', 'rgb(255,192,0)'],
+                data: [73, 26, 10, 4, 1],
+            }
+        ],
+    },
+
+    // Configuration options go here
+    options: {
+        animation : false,
+        legend: {
+            display: false
+        },
+    }
+});
+
+let siberia_reg = document.getElementById('siberia_reg').getContext('2d');
+new Chart(siberia_reg, {
+    // The type of chart we want to create
+    type: 'doughnut',
+    // The data for our dataset
+    data: {
+        labels: ["В транзите", "Доставка сегодня", "Доставлено в контрактный срок", "Опоздало", "Под вопросом"],
+        datasets: [
+            {
+                backgroundColor: ['rgb(255,248,0)', 'rgb(146,208,80)', 'rgb(0,176,80)',
+                    'rgb(255,0,0)', 'rgb(255,192,0)'],
+                data: [73, 26, 10, 4, 0],
+            }
+        ],
+    },
+
+    // Configuration options go here
+    options: {
+        animation : false,
+        legend: {
+            display: false
+        },
+    }
+});
+
+let fareastern_reg = document.getElementById('fareastern_reg').getContext('2d');
+new Chart(fareastern_reg, {
+    // The type of chart we want to create
+    type: 'doughnut',
+    // The data for our dataset
+    data: {
+        labels: ["В транзите", "Доставка сегодня", "Доставлено в контрактный срок", "Опоздало", "Под вопросом"],
+        datasets: [
+            {
+                backgroundColor: ['rgb(255,248,0)', 'rgb(146,208,80)', 'rgb(0,176,80)',
+                    'rgb(255,0,0)', 'rgb(255,192,0)'],
+                data: [73, 26, 10, 4, 0],
+            }
+        ],
+    },
+
+    // Configuration options go here
+    options: {
+        animation : false,
+        legend: {
+            display: false
+        },
     }
 });

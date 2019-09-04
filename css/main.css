@@ -1,35 +1,61 @@
-body {
-    background-color: #000000;
+body{
+    background: #ffffff;
 }
 
-.logo {
-    background: #9795ff;
+#total{
+    position: absolute;
+    z-index: 999;
 }
 
-.title {
-    color: #ffffff;
+#central_reg {
+    position: absolute;
+    top: -465px;
+    left: 43px;
 }
 
-.header {
-    color: #ffffff;
+#south_reg {
+    position: absolute;
+    top: -290px;
+    left: 78px;
 }
 
-.part-header {
-    background-color: #fff;
+#caucasian_reg {
+    position: absolute;
+    top: -215px;
+    left: 36px;
 }
 
-.chart-header {
-    color: #00B0F0;
+#crimea_reg {
+    position: absolute;
+    top: -331px;
+    left: -28px;
 }
 
-.chart-header-type2 {
-    color: #FFC000;
+#privolzh_reg{
+    position: absolute;
+    top: -383px;
+    left: 170px;
 }
 
-.chart-header-type3 {
-    color: #ffffff;
+#northwest_reg{
+    position: absolute;
+    top: -525px;
+    left: 268px;
 }
 
-.charts {
-    background: #1c1c1c;
+#ural_reg{
+    position: absolute;
+    top: -433px;
+    left: 400px;
+}
+
+#siberia_reg{
+    position: absolute;
+    top: -392px;
+    left: 536px;
+}
+#fareastern_reg{
+    position: absolute;
+    top: -586px;
+    left: 786px;
 }

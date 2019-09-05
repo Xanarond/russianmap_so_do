@@ -1,8 +1,8 @@
-body{
+body {
     background: #ffffff;
 }
 
-#total{
+#total {
     position: absolute;
     z-index: 999;
 }
@@ -15,46 +15,47 @@ body{
 
 #south_reg {
     position: absolute;
-    top: -290px;
-    left: 78px;
+    top: -330px;
+    left: 38px;
 }
 
 #caucasian_reg {
     position: absolute;
-    top: -215px;
-    left: 36px;
+    top: -223px;
+    left: -3px;
 }
 
 #crimea_reg {
     position: absolute;
-    top: -331px;
-    left: -28px;
+    top: -389px;
+    left: -76px;
 }
 
-#privolzh_reg{
+#privolzh_reg {
     position: absolute;
     top: -383px;
     left: 170px;
 }
 
-#northwest_reg{
+#northwest_reg {
     position: absolute;
     top: -525px;
     left: 268px;
 }
 
-#ural_reg{
+#ural_reg {
     position: absolute;
-    top: -433px;
-    left: 400px;
+    top: -476px;
+    left: 338px;
 }
 
-#siberia_reg{
+#siberia_reg {
     position: absolute;
     top: -392px;
     left: 536px;
 }
-#fareastern_reg{
+
+#fareastern_reg {
     position: absolute;
     top: -586px;
     left: 786px;

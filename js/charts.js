@@ -10,7 +10,7 @@ Chart.pluginService.register({
             var txt = centerConfig.text;
             var color = centerConfig.color || '#000';
             var sidePadding = centerConfig.sidePadding || 20;
-            var sidePaddingCalculated = (sidePadding/100) * (chart.innerRadius * 2)
+            var sidePaddingCalculated = (sidePadding / 100) * (chart.innerRadius * 2);
             //Start with a base font of 30px
             ctx.font = "30px " + fontStyle;
 
@@ -31,7 +31,7 @@ Chart.pluginService.register({
             ctx.textBaseline = 'middle';
             var centerX = ((chart.chartArea.left + chart.chartArea.right) / 2);
             var centerY = ((chart.chartArea.top + chart.chartArea.bottom) / 2);
-            ctx.font = fontSizeToUse+"px " + fontStyle;
+            ctx.font = fontSizeToUse + "px " + fontStyle;
             ctx.fillStyle = color;
 
             //Draw text in center
@@ -93,7 +93,7 @@ new Chart(central_reg, {
 
 
     options: {
-        animation : false,
+        animation: false,
         elements: {
             center: {
                 text: '100',
@@ -108,7 +108,7 @@ new Chart(central_reg, {
         title: {
             display: true,
             text: 'Central',
-            fontColor: '#ffffff',
+            fontColor: '#000000',
             fontSize: 14,
         }
     }
@@ -133,10 +133,24 @@ new Chart(south_reg, {
 
     // Configuration options go here
     options: {
-        animation : false,
+        elements: {
+            center: {
+                text: '100',
+                color: '#ffffff', //Default black
+                fontStyle: 'Helvetica', //Default Arial
+                sidePadding: 20 //Default 20 (as a percentage)
+            }
+        },
+        animation: false,
         legend: {
             display: false
         },
+        title: {
+            display: true,
+            text: 'Southern',
+            fontColor: '#000000',
+            fontSize: 14,
+        }
     }
 });
 
@@ -159,10 +173,24 @@ new Chart(caucasian_reg, {
 
     // Configuration options go here
     options: {
-        animation : false,
+        elements: {
+            center: {
+                text: '100',
+                color: '#000000', //Default black
+                fontStyle: 'Helvetica', //Default Arial
+                sidePadding: 20 //Default 20 (as a percentage)
+            }
+        },
+        animation: false,
         legend: {
             display: false
         },
+        title: {
+            display: true,
+            text: 'North Caucasian',
+            fontColor: '#000000',
+            fontSize: 14,
+        }
     }
 });
 
@@ -184,10 +212,24 @@ new Chart(privolzh_reg, {
 
     // Configuration options go here
     options: {
-        animation : false,
+        elements: {
+            center: {
+                text: '100',
+                color: '#ffffff', //Default black
+                fontStyle: 'Helvetica', //Default Arial
+                sidePadding: 20 //Default 20 (as a percentage)
+            }
+        },
+        animation: false,
         legend: {
             display: false
         },
+        title: {
+            display: true,
+            text: 'Volga',
+            fontColor: '#000000',
+            fontSize: 14,
+        }
     }
 });
 
@@ -209,10 +251,24 @@ new Chart(crimea_reg, {
 
     // Configuration options go here
     options: {
-        animation : false,
+        elements: {
+            center: {
+                text: '100',
+                color: '#000000', //Default black
+                fontStyle: 'Helvetica', //Default Arial
+                sidePadding: 20 //Default 20 (as a percentage)
+            }
+        },
+        animation: false,
         legend: {
             display: false
         },
+        title: {
+            display: true,
+            text: 'Crimea',
+            fontColor: '#000000',
+            fontSize: 14,
+        }
     }
 });
 
@@ -235,10 +291,24 @@ new Chart(northwest_reg, {
 
     // Configuration options go here
     options: {
-        animation : false,
+        elements: {
+            center: {
+                text: '100',
+                color: '#ffffff', //Default black
+                fontStyle: 'Helvetica', //Default Arial
+                sidePadding: 20 //Default 20 (as a percentage)
+            }
+        },
+        animation: false,
         legend: {
             display: false
         },
+        title: {
+            display: true,
+            text: 'Northwestern',
+            fontColor: '#000000',
+            fontSize: 14,
+        }
     }
 });
 
@@ -260,10 +330,24 @@ new Chart(ural_reg, {
 
     // Configuration options go here
     options: {
-        animation : false,
+        elements: {
+            center: {
+                text: '100',
+                color: '#ffffff', //Default black
+                fontStyle: 'Helvetica', //Default Arial
+                sidePadding: 20 //Default 20 (as a percentage)
+            }
+        },
+        animation: false,
         legend: {
             display: false
         },
+        title: {
+            display: true,
+            text: 'Ural',
+            fontColor: '#000000',
+            fontSize: 14,
+        }
     }
 });
 
@@ -285,10 +369,24 @@ new Chart(siberia_reg, {
 
     // Configuration options go here
     options: {
-        animation : false,
+        elements: {
+            center: {
+                text: '100',
+                color: '#ffffff', //Default black
+                fontStyle: 'Helvetica', //Default Arial
+                sidePadding: 20 //Default 20 (as a percentage)
+            }
+        },
+        animation: false,
         legend: {
             display: false
         },
+        title: {
+            display: true,
+            text: 'Siberian',
+            fontColor: '#000000',
+            fontSize: 14,
+        }
     }
 });
 
@@ -310,9 +408,23 @@ new Chart(fareastern_reg, {
 
     // Configuration options go here
     options: {
-        animation : false,
+        elements: {
+            center: {
+                text: '100',
+                color: '#ffffff', //Default black
+                fontStyle: 'Helvetica', //Default Arial
+                sidePadding: 20 //Default 20 (as a percentage)
+            }
+        },
+        animation: false,
         legend: {
             display: false
         },
+        title: {
+            display: true,
+            text: 'Far Eastern',
+            fontColor: '#000000',
+            fontSize: 14,
+        }
     }
 });

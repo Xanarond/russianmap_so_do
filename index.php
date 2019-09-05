@@ -70,17 +70,17 @@
         <canvas id="central_reg"></canvas>
     </div>
 </div>
-<div class="col-1">
+<div class="col-2">
     <div class="row">
         <canvas id="south_reg"></canvas>
     </div>
 </div>
-<div class="col-1">
+<div class="col-2">
     <div class="row">
         <canvas id="caucasian_reg"></canvas>
     </div>
 </div>
-<div class="col-1">
+<div class="col-2">
     <div class="row">
         <canvas id="crimea_reg"></canvas>
     </div>
@@ -95,7 +95,7 @@
         <canvas id="northwest_reg"></canvas>
     </div>
 </div>
-<div class="col-2">
+<div class="col-3">
     <div class="row">
         <canvas id="ural_reg"></canvas>
     </div>

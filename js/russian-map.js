@@ -32,9 +32,9 @@ var RussianMap = function(options, regions) {
     var height = options.height;
     var viewPort = options.viewPort || '0 0 1134 620';
     var viewSize = options.viewSize || '700 700';
-
+    var id = options.id;
     // канва для рисования регионов
-    var R = Raphael(mapId, width, height, viewPort, viewSize);
+    var R = Raphael(mapId, width, height, viewPort, viewSize, id);
 
     // дефолтовые атрибуты для контуров регионов
     var defaultAttr = options.defaultAttr || {

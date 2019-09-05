@@ -7,15 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
     <script type="text/javascript" src="js/raphael-min.js"></script>
     <script type="text/javascript" src="js/russian-map.js"></script>
     <script>
         // запрос на получение json регионов
         window.onload = function () {
-            fetch('./js/central_reg.json').then(function (response) {
+            fetch('./js/data/central_reg.json').then(function (response) {
                 response.json().then(function (data) {
                     new RussianMap({
                         viewPort: data.viewPort,
@@ -110,6 +110,7 @@
         <canvas id="fareastern_reg"></canvas>
     </div>
 </div>
+<object src="img/cr.svg"></object>
 </body>
 <!--<script src="js/charts.js"></script>-->
 </html>

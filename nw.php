@@ -15,11 +15,11 @@
     <script>
         // запрос на получение json регионов
         window.onload = function () {
-            fetch('./js/data/with-districts.json').then(function (response) {
+            fetch('./js/data/northwestern.json').then(function (response) {
                 response.json().then(function (data) {
                     new RussianMap({
                         viewPort: data.viewPort,
-                        mapId: 'russian-map',
+                        mapId: 'northwestern',
                         width: 1500,
                         height: 1000,
                         // дефолтовые атрибуты для контуров регионов
@@ -61,7 +61,7 @@
 </div>
 <div class="col-md-12">
     <div class="row justify-content-center ">
-        <div id="russian-map">
+        <div id="northwestern">
         </div>
     </div>
 </div>
@@ -110,6 +110,7 @@
         <canvas id="fareastern_reg"></canvas>
     </div>
 </div>
+<object src="img/cr.svg"></object>
 </body>
-<script src="js/charts.js"></script>
+<!--<script src="js/charts.js"></script>-->
 </html>

@@ -50,13 +50,13 @@
 </head>
 <body>
 <div class="row p-5">
-    <div class="col-md-2">
+    <div class="col-md-6">
         <div id="current_date">
             <?php echo date('d.m.Y') ?>
         </div>
     </div>
     <div class="col-md-6">
-        <canvas id="total"></canvas>
+        <canvas id="cr_total"></canvas>
     </div>
 </div>
 <div class="col-md-12">
@@ -67,50 +67,95 @@
 </div>
 <div class="col-2">
     <div class="row">
-        <canvas id="central_reg"></canvas>
+        <canvas id="msk"></canvas>
     </div>
 </div>
 <div class="col-2">
     <div class="row">
-        <canvas id="south_reg"></canvas>
+        <canvas id="msk_area"></canvas>
     </div>
 </div>
 <div class="col-2">
     <div class="row">
-        <canvas id="caucasian_reg"></canvas>
+        <canvas id="sml_area"></canvas>
     </div>
 </div>
 <div class="col-2">
     <div class="row">
-        <canvas id="crimea_reg"></canvas>
+        <canvas id="tver_area"></canvas>
     </div>
 </div>
 <div class="col-2">
     <div class="row">
-        <canvas id="privolzh_reg"></canvas>
+        <canvas id="kaluga_area"></canvas>
     </div>
 </div>
 <div class="col-2">
     <div class="row">
-        <canvas id="northwest_reg"></canvas>
+        <canvas id="bryansk_area"></canvas>
     </div>
 </div>
-<div class="col-3">
+<div class="col-2">
     <div class="row">
-        <canvas id="ural_reg"></canvas>
+        <canvas id="tula_area"></canvas>
     </div>
 </div>
-<div class="col-4">
+<div class="col-2">
     <div class="row">
-        <canvas id="siberia_reg"></canvas>
+        <canvas id="oryol_area"></canvas>
     </div>
 </div>
-<div class="col-4">
+<div class="col-2">
     <div class="row">
-        <canvas id="fareastern_reg"></canvas>
+        <canvas id="kursk_area"></canvas>
+    </div>
+</div>
+<div class="col-2">
+    <div class="row">
+        <canvas id="belgorod_area"></canvas>
+    </div>
+</div>
+<div class="col-2">
+    <div class="row">
+        <canvas id="voronezh_area"></canvas>
+    </div>
+</div>
+<div class="col-2">
+    <div class="row">
+        <canvas id="lipetsk_area"></canvas>
+    </div>
+</div>
+<div class="col-2">
+    <div class="row">
+        <canvas id="tambov_area"></canvas>
+    </div>
+</div>
+<div class="col-2">
+    <div class="row">
+        <canvas id="ryasan_area"></canvas>
+    </div>
+</div>
+<div class="col-2">
+    <div class="row">
+        <canvas id="vladimir_area"></canvas>
+    </div>
+</div>
+<div class="col-2">
+    <div class="row">
+        <canvas id="ivanovo_area"></canvas>
+    </div>
+</div>
+<div class="col-2">
+    <div class="row">
+        <canvas id="kostroma_area"></canvas>
+    </div>
+</div>
+<div class="col-2">
+    <div class="row">
+        <canvas id="yaroslavl_area"></canvas>
     </div>
 </div>
 <object src="img/cr.svg"></object>
 </body>
-<!--<script src="js/charts.js"></script>-->
+<script src="js/charts/cr_charts.js"></script>
 </html>

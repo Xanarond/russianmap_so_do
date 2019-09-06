@@ -111,5 +111,5 @@
     </div>
 </div>
 </body>
-<script src="js/charts.js"></script>
+<script src="js/charts/main.js"></script>
 </html>

@@ -60,3 +60,118 @@ body {
     top: -586px;
     left: 786px;
 }
+
+/*Центральный регион*/
+
+#cr_total{
+    position: absolute;
+    z-index: 999;
+}
+
+#msk{
+    position: absolute;
+    top: -653px;
+    left: 362px;
+}
+
+#msk_area{
+    position: absolute;
+    top: -760px;
+    left: 315px;
+}
+
+#sml_area{
+    position: absolute;
+    top: -796px;
+    left: 97px;
+}
+
+#tver_area{
+    position: absolute;
+    top: -895px;
+    left: 341px;
+}
+
+#kaluga_area{
+    position: absolute;
+    top: -664px;
+    left: 185px;
+}
+
+#bryansk_area{
+    position: absolute;
+    top: -625px;
+    left: 20px;
+}
+
+#tula_area{
+    position: absolute;
+    top: -540px;
+    left: 243px;
+}
+
+#oryol_area{
+    position: absolute;
+    top: -503px;
+    left: 116px;
+}
+
+#kursk_area{
+    position: absolute;
+    top: -464px;
+    left: -6px;
+}
+
+#belgorod_area{
+    position: absolute;
+    top: -302px;
+    left: 40px;
+}
+
+#voronezh_area{
+    position: absolute;
+    top: -227px;
+    left: 168px;
+}
+
+#lipetsk_area{
+    position: absolute;
+    top: -391px;
+    left: 226px;
+}
+
+#tambov_area{
+    position: absolute;
+    top: -298px;
+    left: 338px;
+}
+
+#ryasan_area{
+    position: absolute;
+    top: -476px;
+    left: 387px;
+}
+
+#vladimir_area{
+    position: absolute;
+    top: -566px;
+    left: 498px;
+}
+
+#ivanovo_area{
+    position: absolute;
+    top: -606px;
+    left: 613px;
+}
+
+#kostroma_area{
+    position: absolute;
+    top: -681px;
+    left: 758px;
+}
+
+#yaroslavl_area{
+    position: absolute;
+    top: -758px;
+    left: 576px;
+}

@@ -56,7 +56,7 @@
         </div>
     </div>
     <div class="col-md-6">
-        <canvas id="total"></canvas>
+        <canvas id="ur_total"></canvas>
     </div>
 </div>
 <div class="col-md-12">
@@ -95,22 +95,7 @@
         <canvas id="northwest_reg"></canvas>
     </div>
 </div>
-<div class="col-3">
-    <div class="row">
-        <canvas id="ural_reg"></canvas>
-    </div>
-</div>
-<div class="col-4">
-    <div class="row">
-        <canvas id="siberia_reg"></canvas>
-    </div>
-</div>
-<div class="col-4">
-    <div class="row">
-        <canvas id="fareastern_reg"></canvas>
-    </div>
-</div>
 <object src="img/cr.svg"></object>
 </body>
-<!--<script src="js/charts.js"></script>-->
+<script src="js/charts/ur_charts.js"></script>
 </html>

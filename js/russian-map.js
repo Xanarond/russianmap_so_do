@@ -26,7 +26,7 @@
  *  paths - массив атрибутов path
  *  polygons - массив атрибутов polygon
  */
-var RussianMap = function(options, regions) {
+var RussianMap = function (options, regions) {
     var mapId = options.mapId;
     var width = options.width;
     var height = options.height;
@@ -52,7 +52,7 @@ var RussianMap = function(options, regions) {
     /**
      * Событие onMouseMove для path или polygon внутри контекста полигона (можно использовать this).
      */
-    var onMouseMove = function(event) {
+    var onMouseMove = function (event) {
         var region = this.region;
         // установить всем полигонам в регионе дефолтовые атрибуты
         if (region.paths !== undefined) {
@@ -73,7 +73,7 @@ var RussianMap = function(options, regions) {
     /**
      * Событие при клике на полигон
      */
-    var onMouseClick = function(event) {
+    var onMouseClick = function (event) {
         if (options.onMouseClick) {
             var region = this.region;
             options.onMouseClick.call(this, event);
@@ -83,7 +83,7 @@ var RussianMap = function(options, regions) {
     /**
      * Событие onMouseOut для path или polygon внутри контекста полигона (можно использовать this)
      */
-    var onMouseOut = function(event) {
+    var onMouseOut = function (event) {
         var region = this.region;
         // установить всем полигонам в регионе дефолтовые атрибуты
         if (region.paths !== undefined) {
@@ -106,7 +106,7 @@ var RussianMap = function(options, regions) {
      * @param R
      * @param region
      */
-    var renderRegion = function(region) {
+    var renderRegion = function (region) {
         // прорисовка многоугольников
         if (region.paths !== undefined) {
             for (var p in region.paths) {

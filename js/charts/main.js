@@ -70,6 +70,7 @@ new Chart(total, {
             display: true,
             color: '#ffffff', //Default black
             fontStyle: 'Helvetica', //Default Arial
+            fontSize: 12
         },
     }
 });

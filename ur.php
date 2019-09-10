@@ -67,32 +67,32 @@
 </div>
 <div class="col-2">
     <div class="row">
-        <canvas id="central_reg"></canvas>
+        <canvas id="sverdlovsk"></canvas>
     </div>
 </div>
 <div class="col-2">
     <div class="row">
-        <canvas id="south_reg"></canvas>
+        <canvas id="kurgan_area"></canvas>
     </div>
 </div>
 <div class="col-2">
     <div class="row">
-        <canvas id="caucasian_reg"></canvas>
+        <canvas id="chelyab"></canvas>
     </div>
 </div>
 <div class="col-2">
     <div class="row">
-        <canvas id="crimea_reg"></canvas>
+        <canvas id="yam-nen"></canvas>
     </div>
 </div>
 <div class="col-2">
     <div class="row">
-        <canvas id="privolzh_reg"></canvas>
+        <canvas id="tyumen"></canvas>
     </div>
 </div>
 <div class="col-2">
     <div class="row">
-        <canvas id="northwest_reg"></canvas>
+        <canvas id="k-m"></canvas>
     </div>
 </div>
 <object src="img/cr.svg"></object>

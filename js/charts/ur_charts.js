@@ -33,8 +33,8 @@ new Chart(ur_total, {
 });
 
 
-let central_reg = document.getElementById('central_reg').getContext('2d');
-new Chart(central_reg, {
+let sverdlovsk_area = document.getElementById('sverdlovsk').getContext('2d');
+new Chart(sverdlovsk_area, {
     // The type of chart we want to create
     type: 'doughnut',
     // The data for our dataset
@@ -65,7 +65,7 @@ new Chart(central_reg, {
         },
         title: {
             display: true,
-            text: 'Central',
+            text: 'Sverdlovsk Oblast',
             fontColor: '#000000',
             fontSize: 14,
         }
@@ -73,8 +73,8 @@ new Chart(central_reg, {
 });
 
 
-let south_reg = document.getElementById('south_reg').getContext('2d');
-new Chart(south_reg, {
+let kurgan_area = document.getElementById('kurgan_area').getContext('2d');
+new Chart(kurgan_area, {
     // The type of chart we want to create
     type: 'doughnut',
     // The data for our dataset
@@ -105,7 +105,7 @@ new Chart(south_reg, {
         },
         title: {
             display: true,
-            text: 'Southern',
+            text: 'Kurgan Oblast',
             fontColor: '#000000',
             fontSize: 14,
         }
@@ -113,8 +113,8 @@ new Chart(south_reg, {
 });
 
 
-let caucasian_reg = document.getElementById('caucasian_reg').getContext('2d');
-new Chart(caucasian_reg, {
+let chelyab_area = document.getElementById('chelyab').getContext('2d');
+new Chart(chelyab_area, {
     // The type of chart we want to create
     type: 'doughnut',
     // The data for our dataset
@@ -145,15 +145,15 @@ new Chart(caucasian_reg, {
         },
         title: {
             display: true,
-            text: 'North Caucasian',
+            text: 'Chelyabinsk Oblast',
             fontColor: '#000000',
             fontSize: 14,
         }
     }
 });
 
-let privolzh_reg = document.getElementById('privolzh_reg').getContext('2d');
-new Chart(privolzh_reg, {
+let tyumen_area = document.getElementById('tyumen').getContext('2d');
+new Chart(tyumen_area, {
     // The type of chart we want to create
     type: 'doughnut',
     // The data for our dataset
@@ -184,15 +184,15 @@ new Chart(privolzh_reg, {
         },
         title: {
             display: true,
-            text: 'Volga',
+            text: 'Tyumen Oblast',
             fontColor: '#000000',
             fontSize: 14,
         }
     }
 });
 
-let crimea_reg = document.getElementById('crimea_reg').getContext('2d');
-new Chart(crimea_reg, {
+let yam_nen_area = document.getElementById('yam-nen').getContext('2d');
+new Chart(yam_nen_area, {
     // The type of chart we want to create
     type: 'doughnut',
     // The data for our dataset
@@ -223,7 +223,7 @@ new Chart(crimea_reg, {
         },
         title: {
             display: true,
-            text: 'Crimea',
+            text: 'Yamalo Nenets Autonomous Okrug',
             fontColor: '#000000',
             fontSize: 14,
         }
@@ -231,8 +231,8 @@ new Chart(crimea_reg, {
 });
 
 
-let northwest_reg = document.getElementById('northwest_reg').getContext('2d');
-new Chart(northwest_reg, {
+let km = document.getElementById('k-m').getContext('2d');
+new Chart(km, {
     // The type of chart we want to create
     type: 'doughnut',
     // The data for our dataset
@@ -263,7 +263,7 @@ new Chart(northwest_reg, {
         },
         title: {
             display: true,
-            text: 'Northwestern',
+            text: 'Khanty-Mansi Autonomous Okrug',
             fontColor: '#000000',
             fontSize: 14,
         }

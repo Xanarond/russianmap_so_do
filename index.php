@@ -20,8 +20,8 @@
                     new RussianMap({
                         viewPort: data.viewPort,
                         mapId: 'russian-map',
-                        width: 1500,
-                        height: 1000,
+                        width: '100%',
+                        height: '100%',
                         // дефолтовые атрибуты для контуров регионов
                         defaultAttr: {
                             fill: '#615dff', // цвет которым закрашивать
@@ -50,15 +50,16 @@
 </head>
 <body>
 <div class="row p-5">
-    <div class="col-md-2">
+    <div class="col-2">
         <div id="current_date">
             <?php echo date('d.m.Y') ?>
         </div>
     </div>
-    <div class="col-md-6">
+    <div class="col-sm-4">
         <canvas id="total"></canvas>
     </div>
 </div>
+<div class="row"></div>
 <div class="col-md-12">
     <div class="row justify-content-center ">
         <div id="russian-map">
@@ -95,17 +96,17 @@
         <canvas id="northwest_reg"></canvas>
     </div>
 </div>
-<div class="col-3">
+<div class="col-2">
     <div class="row">
         <canvas id="ural_reg"></canvas>
     </div>
 </div>
-<div class="col-4">
+<div class="col-2">
     <div class="row">
         <canvas id="siberia_reg"></canvas>
     </div>
 </div>
-<div class="col-4">
+<div class="col-2">
     <div class="row">
         <canvas id="fareastern_reg"></canvas>
     </div>

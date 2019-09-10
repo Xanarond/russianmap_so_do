@@ -4,177 +4,338 @@ body {
 
 #total {
     position: absolute;
-    z-index: 999;
+    z-index: 1;
 }
 
-#central_reg {
-    position: absolute;
-    top: -465px;
-    left: 43px;
+#central {
+    width: 100%;
+    height: 100%;
 }
 
-#south_reg {
-    position: absolute;
-    top: -346px;
-    left: 26px;
+@media only screen and (min-width: 1350px) {
+
+    #central_reg {
+        position: relative;
+        top: -358px;
+        left: 95px;
+        display: flex;
+    }
+
+    #south_reg {
+        position: relative;
+        top: -325px;
+        left: 93px;
+    }
+
+    #caucasian_reg {
+        position: relative;
+        top: -318px;
+        left: 59px;
+    }
+
+    #crimea_reg {
+        position: relative;
+        top: -631px;
+        left: -40px;
+    }
+
+    #privolzh_reg {
+        position: relative;
+        top: -717px;
+        left: 221px;
+    }
+
+    #northwest_reg {
+        position: relative;
+        top: -965px;
+        left: 311px;
+    }
+
+    #ural_reg {
+        position: relative;
+        top: -995px;
+        left: 427px;
+    }
+
+    #siberia_reg {
+        position: relative;
+        top: -1030px;
+        left: 632px;
+    }
+
+    #fareastern_reg {
+        position: relative;
+        top: -1287px;
+        left: 786px;
+    }
+
+    /*Центральный регион*/
+    #cr_total {
+        position: absolute;
+        z-index: 999;
+    }
+
+    #msk {
+        position: absolute;
+        top: -653px;
+        left: 362px;
+    }
+
+    #msk_area {
+        position: absolute;
+        top: -760px;
+        left: 315px;
+    }
+
+    #sml_area {
+        position: absolute;
+        top: -796px;
+        left: 97px;
+    }
+
+    #tver_area {
+        position: absolute;
+        top: -895px;
+        left: 341px;
+    }
+
+    #kaluga_area {
+        position: absolute;
+        top: -664px;
+        left: 185px;
+    }
+
+    #bryansk_area {
+        position: absolute;
+        top: -625px;
+        left: 20px;
+    }
+
+    #tula_area {
+        position: absolute;
+        top: -540px;
+        left: 243px;
+    }
+
+    #oryol_area {
+        position: absolute;
+        top: -503px;
+        left: 116px;
+    }
+
+    #kursk_area {
+        position: absolute;
+        top: -464px;
+        left: -6px;
+    }
+
+    #belgorod_area {
+        position: absolute;
+        top: -302px;
+        left: 40px;
+    }
+
+    #voronezh_area {
+        position: absolute;
+        top: -227px;
+        left: 168px;
+    }
+
+    #lipetsk_area {
+        position: absolute;
+        top: -391px;
+        left: 226px;
+    }
+
+    #tambov_area {
+        position: absolute;
+        top: -298px;
+        left: 338px;
+    }
+
+    #ryasan_area {
+        position: absolute;
+        top: -476px;
+        left: 387px;
+    }
+
+    #vladimir_area {
+        position: absolute;
+        top: -566px;
+        left: 498px;
+    }
+
+    #ivanovo_area {
+        position: absolute;
+        top: -606px;
+        left: 613px;
+    }
+
+    #kostroma_area {
+        position: absolute;
+        top: -681px;
+        left: 758px;
+    }
+
+    #yaroslavl_area {
+        position: absolute;
+        top: -758px;
+        left: 576px;
+    }
+
+    /*Уральский регион*/
+    #kurgan_area {
+        position: relative;
+        top: -302px;
+        left: 120px;
+    }
+
+    #yam-nen {
+        position: relative;
+        top: -937px;
+        left: 591px;
+    }
+
+    #chelyab {
+        position: relative;
+        top: -434px;
+        left: 8px;
+    }
+
+    #sverdlovsk {
+        position: relative;
+        top: -358px;
+        left: 95px;
+        display: flex;
+    }
+
+    #tyumen {
+        position: relative;
+        top: -717px;
+        left: 270px;
+    }
+
+    #k-m {
+        position: relative;
+        top: -1018px;
+        left: 311px;
+    }
+
 }
 
-#caucasian_reg {
-    position: absolute;
-    top: -208px;
-    left: -3px;
+@media only screen and (min-width: 1900px) {
+
+    #central_reg {
+        position: relative;
+        top: -487px;
+        left: 126px;
+        display: flex;
+    }
+
+    #south_reg {
+        position: relative;
+        top: -486px;
+        left: 114px;
+    }
+
+    #caucasian_reg {
+        position: relative;
+        top: -453px;
+        left: 77px;
+    }
+
+    #crimea_reg {
+        position: relative;
+        top: -878px;
+        left: -45px;
+    }
+
+    #privolzh_reg {
+        position: relative;
+        top: -1030px;
+        left: 309px;
+    }
+
+    #northwest_reg {
+        position: relative;
+        top: -1404px;
+        left: 409px;
+    }
+
+    #ural_reg {
+        position: relative;
+        top: -1395px;
+        left: 570px;
+    }
+
+    #siberia_reg {
+        position: relative;
+        top: -1530px;
+        left: 886px;
+    }
+
+    #fareastern_reg {
+        position: relative;
+        top: -1819px;
+        left: 1119px;
+    }
+
 }
 
-#crimea_reg {
-    position: absolute;
-    top: -389px;
-    left: -76px;
+@media only screen and (min-width: 3800px) {
+    #central_reg {
+        position: relative;
+        top: -969px;
+        left: 246px;
+    }
+
+    #south_reg {
+        position: relative;
+        top: -900px;
+        left: 264px;
+    }
+
+    #caucasian_reg {
+        position: relative;
+        top: -890px;
+        left: 154px;
+    }
+
+    #crimea_reg {
+        position: relative;
+        top: -1833px;
+        left: -107px;
+    }
+
+    #privolzh_reg {
+        position: relative;
+        top: -2030px;
+        left: 626px;
+    }
+
+    #northwest_reg {
+        position: relative;
+        top: -2740px;
+        left: 841px;
+    }
+
+    #ural_reg {
+        position: relative;
+        top: -2809px;
+        left: 1125px;
+    }
+
+    #siberia_reg {
+        position: relative;
+        top: -2752px;
+        left: 1786px;
+    }
+
+    #fareastern_reg {
+        position: relative;
+        top: -3627px;
+        left: 2256px;
+    }
 }
 
-#privolzh_reg {
-    position: absolute;
-    top: -383px;
-    left: 170px;
-}
-
-#northwest_reg {
-    position: absolute;
-    top: -525px;
-    left: 268px;
-}
-
-#ural_reg {
-    position: absolute;
-    top: -476px;
-    left: 338px;
-}
-
-#siberia_reg {
-    position: absolute;
-    top: -392px;
-    left: 536px;
-}
-
-#fareastern_reg {
-    position: absolute;
-    top: -586px;
-    left: 786px;
-}
-
-/*Центральный регион*/
-
-#cr_total{
-    position: absolute;
-    z-index: 999;
-}
-
-#msk{
-    position: absolute;
-    top: -653px;
-    left: 362px;
-}
-
-#msk_area{
-    position: absolute;
-    top: -760px;
-    left: 315px;
-}
-
-#sml_area{
-    position: absolute;
-    top: -796px;
-    left: 97px;
-}
-
-#tver_area{
-    position: absolute;
-    top: -895px;
-    left: 341px;
-}
-
-#kaluga_area{
-    position: absolute;
-    top: -664px;
-    left: 185px;
-}
-
-#bryansk_area{
-    position: absolute;
-    top: -625px;
-    left: 20px;
-}
-
-#tula_area{
-    position: absolute;
-    top: -540px;
-    left: 243px;
-}
-
-#oryol_area{
-    position: absolute;
-    top: -503px;
-    left: 116px;
-}
-
-#kursk_area{
-    position: absolute;
-    top: -464px;
-    left: -6px;
-}
-
-#belgorod_area{
-    position: absolute;
-    top: -302px;
-    left: 40px;
-}
-
-#voronezh_area{
-    position: absolute;
-    top: -227px;
-    left: 168px;
-}
-
-#lipetsk_area{
-    position: absolute;
-    top: -391px;
-    left: 226px;
-}
-
-#tambov_area{
-    position: absolute;
-    top: -298px;
-    left: 338px;
-}
-
-#ryasan_area{
-    position: absolute;
-    top: -476px;
-    left: 387px;
-}
-
-#vladimir_area{
-    position: absolute;
-    top: -566px;
-    left: 498px;
-}
-
-#ivanovo_area{
-    position: absolute;
-    top: -606px;
-    left: 613px;
-}
-
-#kostroma_area{
-    position: absolute;
-    top: -681px;
-    left: 758px;
-}
-
-#yaroslavl_area{
-    position: absolute;
-    top: -758px;
-    left: 576px;
-}
-
-/*Уральский регион*/
 

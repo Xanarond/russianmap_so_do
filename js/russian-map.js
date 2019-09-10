@@ -40,7 +40,7 @@ var RussianMap = function (options, regions) {
     var defaultAttr = options.defaultAttr || {
         fill: '#d8d8d8', // цвет которым закрашивать
         stroke: '#ffffff', // цвет границы
-        'stroke-width': 1, // ширина границы
+        'stroke-width': 0.1, // ширина границы
         'stroke-linejoin': 'round' // скруглять углы
     };
 

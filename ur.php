@@ -12,40 +12,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
     <script type="text/javascript" src="js/raphael-min.js"></script>
     <script type="text/javascript" src="js/russian-map.js"></script>
-    <script>
-        // запрос на получение json регионов
-        window.onload = function () {
-            fetch('./js/data/ural_reg.json').then(function (response) {
-                response.json().then(function (data) {
-                    new RussianMap({
-                        viewPort: data.viewPort,
-                        mapId: 'ural_region',
-                        width: 1500,
-                        height: 1000,
-                        // дефолтовые атрибуты для контуров регионов
-                        defaultAttr: {
-                            fill: '#615dff', // цвет которым закрашивать
-                            stroke: '#ffffff', // цвет границы
-                            'stroke-width': 1, // ширина границы
-                            'stroke-linejoin': 'round' // скруглять углы
-                        },
-                        mouseMoveAttr: {
-                            fill: '#25669e'
-                        },
-                        /*onMouseMove: function (event) {
-                            console.log('mouse on ' + this.region.name);
-                        },
-                        onMouseOut: function (event) {
-                            console.log('out on ' + this.region.name);
-                        },*/
-                        onMouseClick: function (event) {
-                            console.log('clicked on ' + this.region.name);
-                        }
-                    }, data.regions);
-                });
-            });
-        };
-    </script>
     <title>Document</title>
 </head>
 <body>
@@ -61,7 +27,7 @@
 </div>
 <div class="col-md-12">
     <div class="row justify-content-center ">
-        <div id="ural_region">
+        <img src="img/ural.svg" id="img_full">
         </div>
     </div>
 </div>

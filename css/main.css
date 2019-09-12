@@ -9,7 +9,7 @@ body {
 
 #img_full {
     width: 100%;
-    height: 50%;
+    height: 100%;
 }
 
 @media only screen and (min-width: 1350px) {
@@ -186,8 +186,8 @@ body {
     /*Уральский регион*/
     #kurgan_area {
         position: relative;
-        top: -302px;
-        left: 120px;
+        top: -284px;
+        left: 173px;
     }
 
     #yam-nen {
@@ -198,21 +198,21 @@ body {
 
     #chelyab {
         position: relative;
-        top: -434px;
-        left: 8px;
+        top: -415px;
+        left: 52px;
     }
 
     #sverdlovsk {
         position: relative;
         top: -358px;
-        left: 95px;
+        left: 161px;
         display: flex;
     }
 
     #tyumen {
         position: relative;
-        top: -717px;
-        left: 270px;
+        top: -680px;
+        left: 297px;
     }
 
     #k-m {
@@ -221,6 +221,54 @@ body {
         left: 311px;
     }
 
+    /*Южный регион*/
+    #volg_area {
+        position: relative;
+        top: -1994px;
+        left: 900px;
+
+    }
+
+    #rost_area {
+        position: relative;
+        top: -2089px;
+        left: 600px;
+
+    }
+
+    #krn_area {
+        position: relative;
+        top: -2170px;
+        left: 300px;
+
+    }
+
+    #ad_rep {
+        position: relative;
+        top: -2170px;
+        left: 300px;
+
+    }
+
+    #kal_rep {
+        position: relative;
+        top: -2139px;
+        left: 850px;
+
+    }
+
+    #ast_area {
+        position: relative;
+        top: -2139px;
+        left: 1100px;
+
+    }
+
+    #crim_area {
+        position: relative;
+        top: -2939px;
+        left: -40px;
+    }
 }
 
 @media only screen and (min-width: 1900px) {
@@ -394,6 +442,141 @@ body {
         left: 911px;
     }
 
+    /*Уральский регион*/
+    #kurgan_area {
+        position: relative;
+        top: -402px;
+        left: 250px;
+    }
+
+    #yam-nen {
+        position: relative;
+        top: -1237px;
+        left: 791px;
+    }
+
+    #chelyab {
+        position: relative;
+        top: -615px;
+        left: 52px;
+    }
+
+    #sverdlovsk {
+        position: relative;
+        top: -458px;
+        left: 251px;
+        display: flex;
+    }
+
+    #tyumen {
+        position: relative;
+        top: -980px;
+        left: 397px;
+    }
+
+    #k-m {
+        position: relative;
+        top: -1418px;
+        left: 511px;
+    }
+
+    /*Южный регион*/
+    #volg_area {
+        position: relative;
+        top: -1994px;
+        left: 900px;
+
+    }
+
+    #rost_area {
+        position: relative;
+        top: -2089px;
+        left: 600px;
+
+    }
+
+    #krn_area {
+        position: relative;
+        top: -2170px;
+        left: 300px;
+
+    }
+
+    #ad_rep {
+        position: relative;
+        top: -2170px;
+        left: 300px;
+
+    }
+
+    #kal_rep {
+        position: relative;
+        top: -2839px;
+        left: 1106px;
+
+    }
+
+    #ast_area {
+        position: relative;
+        top: -2939px;
+        left: 1500px;
+
+    }
+
+    #crim_area {
+        position: relative;
+        top: -2939px;
+        left: -40px;
+    }
+
+    /*Южный регион*/
+    #volg_area {
+        position: relative;
+        top: -2994px;
+        left: 1400px;
+
+    }
+
+    #rost_area {
+        position: relative;
+        top: -3089px;
+        left: 800px;
+
+    }
+
+    #krn_area {
+        position: relative;
+        top: -3070px;
+        left: 429px;
+
+    }
+
+    #ad_rep {
+        position: relative;
+        top: -2970px;
+        left: 381px;
+
+    }
+
+    #kal_rep {
+        position: relative;
+        top: -2139px;
+        left: 850px;
+
+    }
+
+    #ast_area {
+        position: relative;
+        top: -2139px;
+        left: 1100px;
+
+    }
+
+    #crim_area {
+        position: relative;
+        top: -4139px;
+        left: -66px;
+    }
 }
 
 @media only screen and (min-width: 3800px) {
@@ -565,6 +748,43 @@ body {
         left: 1811px;
     }
 
+    /*Уральский регион*/
+    #kurgan_area {
+        position: relative;
+        top: -802px;
+        left: 480px;
+    }
+
+    #yam-nen {
+        position: relative;
+        top: -2537px;
+        left: 1591px;
+    }
+
+    #chelyab {
+        position: relative;
+        top: -1015px;
+        left: 52px;
+    }
+
+    #sverdlovsk {
+        position: relative;
+        top: -858px;
+        left: 380px;
+        display: flex;
+    }
+
+    #tyumen {
+        position: relative;
+        top: -1980px;
+        left: 897px;
+    }
+
+    #k-m {
+        position: relative;
+        top: -2918px;
+        left: 911px;
+    }
 }
 
 

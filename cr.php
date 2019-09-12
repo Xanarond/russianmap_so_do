@@ -12,7 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
     <script type="text/javascript" src="js/raphael-min.js"></script>
     <script type="text/javascript" src="js/russian-map.js"></script>
-    <script>
+    <!--<script>
         // запрос на получение json регионов
         window.onload = function () {
             fetch('./js/data/central_reg.json').then(function (response) {
@@ -20,8 +20,8 @@
                     new RussianMap({
                         viewPort: data.viewPort,
                         mapId: 'central_region',
-                        width: 1500,
-                        height: 1000,
+                        width: '100%',
+                        height: '100%',
                         // дефолтовые атрибуты для контуров регионов
                         defaultAttr: {
                             fill: '#615dff', // цвет которым закрашивать
@@ -45,7 +45,7 @@
                 });
             });
         };
-    </script>
+    </script>-->
     <title>Document</title>
 </head>
 <body>
@@ -61,7 +61,7 @@
 </div>
 <div class="col-md-12">
     <div class="row justify-content-center ">
-        <div id="central_region">
+        <img src="img/cr.svg" alt="" id="img_full">
         </div>
     </div>
 </div>

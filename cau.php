@@ -56,61 +56,50 @@
         </div>
     </div>
     <div class="col-md-6">
-        <canvas id="total"></canvas>
+        <canvas id="cau_total"></canvas>
     </div>
 </div>
 <div class="col-md-12">
     <div class="row justify-content-center ">
-        <div id="caucas_region">
-        </div>
+        <img src="img/cau.svg" alt="caucas" id="img_full">
     </div>
 </div>
 <div class="col-2">
     <div class="row">
-        <canvas id="central_reg"></canvas>
+        <canvas id="stv_area"></canvas>
     </div>
 </div>
 <div class="col-2">
     <div class="row">
-        <canvas id="south_reg"></canvas>
+        <canvas id="k-h"></canvas>
     </div>
 </div>
 <div class="col-2">
     <div class="row">
-        <canvas id="caucasian_reg"></canvas>
+        <canvas id="k-b"></canvas>
     </div>
 </div>
 <div class="col-2">
     <div class="row">
-        <canvas id="crimea_reg"></canvas>
+        <canvas id="nosetia"></canvas>
     </div>
 </div>
 <div class="col-2">
     <div class="row">
-        <canvas id="privolzh_reg"></canvas>
+        <canvas id="ingus"></canvas>
     </div>
 </div>
 <div class="col-2">
     <div class="row">
-        <canvas id="northwest_reg"></canvas>
+        <canvas id="chechen"></canvas>
     </div>
 </div>
-<div class="col-3">
+<div class="col-2">
     <div class="row">
-        <canvas id="ural_reg"></canvas>
-    </div>
-</div>
-<div class="col-4">
-    <div class="row">
-        <canvas id="siberia_reg"></canvas>
-    </div>
-</div>
-<div class="col-4">
-    <div class="row">
-        <canvas id="fareastern_reg"></canvas>
+        <canvas id="dag"></canvas>
     </div>
 </div>
 <object src="img/cr.svg"></object>
 </body>
-<!--<script src="js/charts.js"></script>-->
+<script src="js/charts/cau_charts.js"></script>
 </html>

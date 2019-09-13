@@ -269,6 +269,43 @@ body {
         top: -2939px;
         left: -40px;
     }
+    /*Кавказ*/
+    #stv_area{
+        position: relative;
+        bottom: 700px;
+        left: 550px;
+    }
+    #k-h{
+        position: relative;
+        bottom: 850px;
+        left: 350px;
+    }
+    #k-b{
+        position: relative;
+        bottom: 850px;
+        left: 430px;
+    }
+    #nosetia{
+        position: relative;
+        bottom: 850px;
+        left: 430px;
+
+    }
+    #ingus{
+        position: relative;
+        bottom: 950px;
+        left: 540px;
+    }
+    #chechen{
+        position: relative;
+        bottom: 980px;
+        left: 580px;
+    }
+    #dag{
+        position: relative;
+        bottom: 950px;
+        left: 650px;
+    }
 }
 
 @media only screen and (min-width: 1900px) {
@@ -483,55 +520,6 @@ body {
     /*Южный регион*/
     #volg_area {
         position: relative;
-        top: -1994px;
-        left: 900px;
-
-    }
-
-    #rost_area {
-        position: relative;
-        top: -2089px;
-        left: 600px;
-
-    }
-
-    #krn_area {
-        position: relative;
-        top: -2170px;
-        left: 300px;
-
-    }
-
-    #ad_rep {
-        position: relative;
-        top: -2170px;
-        left: 300px;
-
-    }
-
-    #kal_rep {
-        position: relative;
-        top: -2839px;
-        left: 1106px;
-
-    }
-
-    #ast_area {
-        position: relative;
-        top: -2939px;
-        left: 1500px;
-
-    }
-
-    #crim_area {
-        position: relative;
-        top: -2939px;
-        left: -40px;
-    }
-
-    /*Южный регион*/
-    #volg_area {
-        position: relative;
         top: -2994px;
         left: 1400px;
 
@@ -560,15 +548,15 @@ body {
 
     #kal_rep {
         position: relative;
-        top: -2139px;
-        left: 850px;
+        top: -2839px;
+        left: 1150px;
 
     }
 
     #ast_area {
         position: relative;
-        top: -2139px;
-        left: 1100px;
+        top: -3139px;
+        left: 1550px;
 
     }
 
@@ -576,6 +564,42 @@ body {
         position: relative;
         top: -4139px;
         left: -66px;
+    }
+    /*Кавказ*/
+    #stv_area{
+        position: relative;
+        bottom: 1000px;
+        left: 750px;
+    }
+    #k-h{
+        position: relative;
+        bottom: 1180px;
+        left: 500px;
+    }
+    #k-b{
+        position: relative;
+        bottom: 1170px;
+        left: 630px;
+    }
+    #nosetia{
+        position: relative;
+        bottom: 1150px;
+        left: 630px;
+    }
+    #ingus{
+        position: relative;
+        bottom: 1350px;
+        left: 770px;
+    }
+    #chechen{
+        position: relative;
+        bottom: 1380px;
+        left: 880px;
+    }
+    #dag{
+        position: relative;
+        bottom: 1280px;
+        left: 890px;
     }
 }
 
@@ -784,6 +808,92 @@ body {
         position: relative;
         top: -2918px;
         left: 911px;
+    }
+
+    /*Южный регион*/
+    #volg_area {
+        position: relative;
+        top: -5794px;
+        left: 2800px;
+
+    }
+
+    #rost_area {
+        position: relative;
+        top: -6089px;
+        left: 1800px;
+
+    }
+
+    #krn_area {
+        position: relative;
+        top: -6070px;
+        left: 729px;
+
+    }
+
+    #ad_rep {
+        position: relative;
+        top: -5970px;
+        left: 781px;
+
+    }
+
+    #kal_rep {
+        position: relative;
+        top: -5839px;
+        left: 2450px;
+
+    }
+
+    #ast_area {
+        position: relative;
+        top: -6139px;
+        left: 3046px;
+
+    }
+
+    #crim_area {
+        position: relative;
+        top: -8139px;
+        left: -133px;
+    }
+
+    /*Кавказ*/
+    #stv_area{
+        position: relative;
+        bottom: 2000px;
+        left: 1550px;
+    }
+    #k-h{
+        position: relative;
+        bottom: 2380px;
+        left: 1070px;
+    }
+    #k-b{
+        position: relative;
+        bottom: 2370px;
+        left: 1230px;
+    }
+    #nosetia{
+        position: relative;
+        bottom: 2350px;
+        left: 1230px;
+    }
+    #ingus{
+        position: relative;
+        bottom: 2650px;
+        left: 1500px;
+    }
+    #chechen{
+        position: relative;
+        bottom: 2780px;
+        left: 1780px;
+    }
+    #dag{
+        position: relative;
+        bottom: 2580px;
+        left: 1790px;
     }
 }
 

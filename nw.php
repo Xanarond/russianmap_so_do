@@ -12,40 +12,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
     <script type="text/javascript" src="js/raphael-min.js"></script>
     <script type="text/javascript" src="js/russian-map.js"></script>
-    <script>
-        // запрос на получение json регионов
-        window.onload = function () {
-            fetch('./js/data/northwestern.json').then(function (response) {
-                response.json().then(function (data) {
-                    new RussianMap({
-                        viewPort: data.viewPort,
-                        mapId: 'northwestern',
-                        width: 1500,
-                        height: 1000,
-                        // дефолтовые атрибуты для контуров регионов
-                        defaultAttr: {
-                            fill: '#615dff', // цвет которым закрашивать
-                            stroke: '#ffffff', // цвет границы
-                            'stroke-width': 1, // ширина границы
-                            'stroke-linejoin': 'round' // скруглять углы
-                        },
-                        mouseMoveAttr: {
-                            fill: '#25669e'
-                        },
-                        /*onMouseMove: function (event) {
-                            console.log('mouse on ' + this.region.name);
-                        },
-                        onMouseOut: function (event) {
-                            console.log('out on ' + this.region.name);
-                        },*/
-                        onMouseClick: function (event) {
-                            console.log('clicked on ' + this.region.name);
-                        }
-                    }, data.regions);
-                });
-            });
-        };
-    </script>
     <title>Document</title>
 </head>
 <body>
@@ -56,61 +22,60 @@
         </div>
     </div>
     <div class="col-md-6">
-        <canvas id="total"></canvas>
+        <canvas id="nw_total"></canvas>
     </div>
 </div>
 <div class="col-md-12">
-    <div class="row justify-content-center ">
-        <div id="northwestern">
-        </div>
+    <div class="row justify-content-center">
+        <img src="img/nv.svg" alt="" id="img_full">
     </div>
 </div>
 <div class="col-2">
     <div class="row">
-        <canvas id="central_reg"></canvas>
+        <canvas id="kallin_area"></canvas>
     </div>
 </div>
 <div class="col-2">
     <div class="row">
-        <canvas id="south_reg"></canvas>
+        <canvas id="ps_area"></canvas>
     </div>
 </div>
 <div class="col-2">
     <div class="row">
-        <canvas id="caucasian_reg"></canvas>
+        <canvas id="nov_area"></canvas>
     </div>
 </div>
 <div class="col-2">
     <div class="row">
-        <canvas id="crimea_reg"></canvas>
+        <canvas id="sp_area"></canvas>
     </div>
 </div>
 <div class="col-2">
     <div class="row">
-        <canvas id="privolzh_reg"></canvas>
+        <canvas id="kar_rep"></canvas>
     </div>
 </div>
 <div class="col-2">
     <div class="row">
-        <canvas id="northwest_reg"></canvas>
+        <canvas id="vologda_area"></canvas>
     </div>
 </div>
-<div class="col-3">
+<div class="col-2">
     <div class="row">
-        <canvas id="ural_reg"></canvas>
+        <canvas id="ark_area"></canvas>
     </div>
 </div>
-<div class="col-4">
+<div class="col-2">
     <div class="row">
-        <canvas id="siberia_reg"></canvas>
+        <canvas id="komi_area"></canvas>
     </div>
 </div>
-<div class="col-4">
+<div class="col-2">
     <div class="row">
-        <canvas id="fareastern_reg"></canvas>
+        <canvas id="mur_area"></canvas>
     </div>
 </div>
 <object src="img/cr.svg"></object>
 </body>
-<!--<script src="js/charts.js"></script>-->
+<script src="js/charts/nw_charts.js"></script>
 </html>

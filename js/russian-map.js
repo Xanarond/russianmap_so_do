@@ -78,7 +78,7 @@ var RussianMap = function (options, regions) {
             var region = this.region;
             options.onMouseClick.call(this, event);
         }
-    }
+    };
 
     /**
      * Событие onMouseOut для path или polygon внутри контекста полигона (можно использовать this)

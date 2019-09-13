@@ -269,42 +269,104 @@ body {
         top: -2939px;
         left: -40px;
     }
+
     /*Кавказ*/
-    #stv_area{
+    #stv_area {
         position: relative;
         bottom: 700px;
         left: 550px;
     }
-    #k-h{
+
+    #k-h {
         position: relative;
         bottom: 850px;
         left: 350px;
     }
-    #k-b{
+
+    #k-b {
         position: relative;
         bottom: 850px;
         left: 430px;
     }
-    #nosetia{
+
+    #nosetia {
         position: relative;
         bottom: 850px;
         left: 430px;
 
     }
-    #ingus{
+
+    #ingus {
         position: relative;
         bottom: 950px;
         left: 540px;
     }
-    #chechen{
+
+    #chechen {
         position: relative;
         bottom: 980px;
         left: 580px;
     }
-    #dag{
+
+    #dag {
         position: relative;
         bottom: 950px;
         left: 650px;
+    }
+
+    /*Северо-западный регион*/
+    #kallin_area {
+        position: relative;
+        bottom: 1680px;
+        left: 0;
+    }
+
+    #ps_area {
+        position: relative;
+        bottom: 1680px;
+        left: 150px;
+    }
+
+    #nov_area {
+        position: relative;
+        bottom: 1780px;
+        left: 250px;
+    }
+
+    #sp_area {
+        position: relative;
+        bottom: 2000px;
+        left: 270px;
+    }
+
+    #kar_rep {
+        position: relative;
+        bottom: 2100px;
+        left: 410px;
+    }
+
+    #vologda_area {
+        position: relative;
+        bottom: 2100px;
+        left: 410px;
+    }
+
+    #ark_area {
+        position: relative;
+        bottom: 2200px;
+        left: 550px;
+    }
+
+    #komi_area {
+        position: relative;
+        bottom: 2200px;
+        left: 800px;
+    }
+
+    #mur_area {
+        position: relative;
+        bottom: 2700px;
+        left: 620px;
     }
 }
 
@@ -565,38 +627,45 @@ body {
         top: -4139px;
         left: -66px;
     }
+
     /*Кавказ*/
-    #stv_area{
+    #stv_area {
         position: relative;
         bottom: 1000px;
         left: 750px;
     }
-    #k-h{
+
+    #k-h {
         position: relative;
         bottom: 1180px;
         left: 500px;
     }
-    #k-b{
+
+    #k-b {
         position: relative;
         bottom: 1170px;
         left: 630px;
     }
-    #nosetia{
+
+    #nosetia {
         position: relative;
         bottom: 1150px;
         left: 630px;
     }
-    #ingus{
+
+    #ingus {
         position: relative;
         bottom: 1350px;
         left: 770px;
     }
-    #chechen{
+
+    #chechen {
         position: relative;
         bottom: 1380px;
         left: 880px;
     }
-    #dag{
+
+    #dag {
         position: relative;
         bottom: 1280px;
         left: 890px;
@@ -860,37 +929,43 @@ body {
     }
 
     /*Кавказ*/
-    #stv_area{
+    #stv_area {
         position: relative;
         bottom: 2000px;
         left: 1550px;
     }
-    #k-h{
+
+    #k-h {
         position: relative;
         bottom: 2380px;
         left: 1070px;
     }
-    #k-b{
+
+    #k-b {
         position: relative;
         bottom: 2370px;
         left: 1230px;
     }
-    #nosetia{
+
+    #nosetia {
         position: relative;
         bottom: 2350px;
         left: 1230px;
     }
-    #ingus{
+
+    #ingus {
         position: relative;
         bottom: 2650px;
         left: 1500px;
     }
-    #chechen{
+
+    #chechen {
         position: relative;
         bottom: 2780px;
         left: 1780px;
     }
-    #dag{
+
+    #dag {
         position: relative;
         bottom: 2580px;
         left: 1790px;

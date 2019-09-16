@@ -139,7 +139,7 @@ new Chart(nov_area, {
         },
         title: {
             display: true,
-            text: 'Pskov Oblast',
+            text: 'Novgorod Oblast',
             fontColor: '#000000',
             fontSize: 14,
         }
@@ -177,7 +177,7 @@ new Chart(sp_area, {
         },
         title: {
             display: true,
-            text: 'Pskov Oblast',
+            text: 'Saint-Petersburg',
             fontColor: '#000000',
             fontSize: 14,
         }
@@ -291,7 +291,7 @@ new Chart(ark_area, {
         },
         title: {
             display: true,
-            text: 'Vologda Oblast',
+            text: 'Arkhangelsk Oblast',
             fontColor: '#000000',
             fontSize: 14,
         }

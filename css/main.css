@@ -670,6 +670,61 @@ body {
         bottom: 1280px;
         left: 890px;
     }
+
+    /*Северо-западный регион*/
+    #kallin_area {
+        position: relative;
+        bottom: 2380px;
+        left: 0;
+    }
+
+    #ps_area {
+        position: relative;
+        bottom: 2380px;
+        left: 250px;
+    }
+
+    #nov_area {
+        position: relative;
+        bottom: 2500px;
+        left: 380px;
+    }
+
+    #sp_area {
+        position: relative;
+        bottom: 2850px;
+        left: 380px;
+    }
+
+    #kar_rep {
+        position: relative;
+        bottom: 3000px;
+        left: 600px;
+    }
+
+    #vologda_area {
+        position: relative;
+        bottom: 2950px;
+        left: 560px;
+    }
+
+    #ark_area {
+        position: relative;
+        bottom: 3200px;
+        left: 750px;
+    }
+
+    #komi_area {
+        position: relative;
+        bottom: 3200px;
+        left: 1100px;
+    }
+
+    #mur_area {
+        position: relative;
+        bottom: 3800px;
+        left: 850px;
+    }
 }
 
 @media only screen and (min-width: 3800px) {
@@ -969,6 +1024,60 @@ body {
         position: relative;
         bottom: 2580px;
         left: 1790px;
+    }
+
+    /*Северо-западный регион*/
+    #kallin_area {
+        position: relative;
+        bottom: 4680px;
+    }
+
+    #ps_area {
+        position: relative;
+        bottom: 4780px;
+        left: 450px;
+    }
+
+    #nov_area {
+        position: relative;
+        bottom: 5000px;
+        left: 780px;
+    }
+
+    #sp_area {
+        position: relative;
+        bottom: 5750px;
+        left: 780px;
+    }
+
+    #kar_rep {
+        position: relative;
+        bottom: 6000px;
+        left: 1200px;
+    }
+
+    #vologda_area {
+        position: relative;
+        bottom: 5950px;
+        left: 1150px;
+    }
+
+    #ark_area {
+        position: relative;
+        bottom: 6400px;
+        left: 1650px;
+    }
+
+    #komi_area {
+        position: relative;
+        bottom: 6400px;
+        left: 2300px;
+    }
+
+    #mur_area {
+        position: relative;
+        bottom: 7600px;
+        left: 1750px;
     }
 }
 

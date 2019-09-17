@@ -55,7 +55,7 @@
             <?php echo date('d.m.Y') ?>
         </div>
     </div>
-    <div class="col-sm-4">
+    <div class="col-md-4">
         <canvas id="total"></canvas>
     </div>
 </div>

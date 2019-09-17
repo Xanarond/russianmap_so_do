@@ -368,6 +368,55 @@ body {
         bottom: 2700px;
         left: 620px;
     }
+
+    /*Дальневосточный регион*/
+    #sakha_rep {
+        position: relative;
+        bottom: 600px;
+        left: 350px;
+    }
+
+    #amur_area {
+        position: relative;
+        bottom: 330px;
+        left: 280px;
+    }
+
+    #jewish {
+        position: relative;
+        bottom: 280px;
+        left: 200px;
+    }
+
+    #prima {
+        position: relative;
+        bottom: 180px;
+        left: 50px;
+    }
+
+    #saha {
+        position: relative;
+        bottom: 420px;
+        left: -150px;
+    }
+
+    #khab {
+        position: relative;
+        bottom: 420px;
+        left: -550px;
+    }
+
+    #mag {
+        position: relative;
+        bottom: 800px;
+        left: 620px;
+    }
+
+    #kam {
+        position: relative;
+        bottom: 800px;
+        left: 580px;
+    }
 }
 
 @media only screen and (min-width: 1900px) {
@@ -725,6 +774,55 @@ body {
         bottom: 3800px;
         left: 850px;
     }
+
+    /*Дальневосточный регион*/
+    #sakha_rep {
+        position: relative;
+        bottom: 800px;
+        left: 500px;
+    }
+
+    #amur_area {
+        position: relative;
+        bottom: 490px;
+        left: 420px;
+    }
+
+    #jewish {
+        position: relative;
+        bottom: 380px;
+        left: 260px;
+    }
+
+    #prima {
+        position: relative;
+        bottom: 280px;
+        left: 70px;
+    }
+
+    #saha {
+        position: relative;
+        bottom: 620px;
+        left: -220px;
+    }
+
+    #khab {
+        position: relative;
+        bottom: 650px;
+        left: -800px;
+    }
+
+    #mag {
+        position: relative;
+        bottom: 1150px;
+        left: 870px;
+    }
+
+    #kam {
+        position: relative;
+        bottom: 1100px;
+        left: 780px;
+    }
 }
 
 @media only screen and (min-width: 3800px) {
@@ -1078,6 +1176,55 @@ body {
         position: relative;
         bottom: 7600px;
         left: 1750px;
+    }
+
+    /*Дальневосточный регион*/
+    #sakha_rep {
+        position: relative;
+        bottom: 1650px;
+        left: 900px;
+    }
+
+    #amur_area {
+        position: relative;
+        bottom: 950px;
+        left: 820px;
+    }
+
+    #jewish {
+        position: relative;
+        bottom: 730px;
+        left: 560px;
+    }
+
+    #prima {
+        position: relative;
+        bottom: 480px;
+        left: 70px;
+    }
+
+    #saha {
+        position: relative;
+        bottom: 1220px;
+        left: -420px;
+    }
+
+    #khab {
+        position: relative;
+        bottom: 1250px;
+        left: -1500px;
+    }
+
+    #mag {
+        position: relative;
+        bottom: 2300px;
+        left: 1750px;
+    }
+
+    #kam {
+        position: relative;
+        bottom: 2250px;
+        left: 1580px;
     }
 }
 

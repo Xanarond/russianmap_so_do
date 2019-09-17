@@ -12,40 +12,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
     <script type="text/javascript" src="js/raphael-min.js"></script>
     <script type="text/javascript" src="js/russian-map.js"></script>
-    <script>
-        // запрос на получение json регионов
-        window.onload = function () {
-            fetch('./js/data/fareastern.json').then(function (response) {
-                response.json().then(function (data) {
-                    new RussianMap({
-                        viewPort: data.viewPort,
-                        mapId: 'fareastern_region',
-                        width: 1500,
-                        height: 1000,
-                        // дефолтовые атрибуты для контуров регионов
-                        defaultAttr: {
-                            fill: '#615dff', // цвет которым закрашивать
-                            stroke: '#ffffff', // цвет границы
-                            'stroke-width': 1, // ширина границы
-                            'stroke-linejoin': 'round' // скруглять углы
-                        },
-                        mouseMoveAttr: {
-                            fill: '#25669e'
-                        },
-                        /*onMouseMove: function (event) {
-                            console.log('mouse on ' + this.region.name);
-                        },
-                        onMouseOut: function (event) {
-                            console.log('out on ' + this.region.name);
-                        },*/
-                        onMouseClick: function (event) {
-                            console.log('clicked on ' + this.region.name);
-                        }
-                    }, data.regions);
-                });
-            });
-        };
-    </script>
     <title>Document</title>
 </head>
 <body>
@@ -56,16 +22,39 @@
         </div>
     </div>
     <div class="col-md-6">
-        <canvas id="total"></canvas>
+        <canvas id="fe_total"></canvas>
     </div>
 </div>
 <div class="col-md-12">
-    <div class="row justify-content-center ">
-        <div id="fareastern_region">
+    <div class="row">
+        <img src="img/fe.svg" alt="" id="img_full">
+        <div class="col-2">
+            <canvas id="sakha_rep"></canvas>
+        </div>
+        <div class="col-2">
+            <canvas id="amur_area"></canvas>
+        </div>
+        <div class="col-2">
+            <canvas id="jewish"></canvas>
+        </div>
+        <div class="col-2">
+            <canvas id="prima"></canvas>
+        </div>
+        <div class="col-2">
+            <canvas id="saha"></canvas>
+        </div>
+        <div class="col-2">
+            <canvas id="khab"></canvas>
+        </div>
+        <div class="col-2">
+            <canvas id="mag"></canvas>
+        </div>
+        <div class="col-2">
+            <canvas id="kam"></canvas>
         </div>
     </div>
 </div>
 <object src="img/cr.svg"></object>
 </body>
-<!--<script src="js/charts.js"></script>-->
+<script src="js/charts/fe_charts.js"></script>
 </html>

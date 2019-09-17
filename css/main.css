@@ -417,6 +417,73 @@ body {
         bottom: 800px;
         left: 580px;
     }
+
+    /*Сибирский регион*/
+    #krasnoyar {
+        position: relative;
+        bottom: 800px;
+        left: 500px;
+    }
+
+    #omsk {
+        position: relative;
+        bottom: 400px;
+        right: 170px;
+    }
+
+    #novosib {
+        position: relative;
+        bottom: 350px;
+        right: 450px;
+    }
+
+    #altai {
+        position: relative;
+        bottom: 250px;
+        right: 650px;
+    }
+
+    #kemer {
+        position: relative;
+        bottom: 350px;
+        right: 760px;
+    }
+
+    #khakas {
+        position: relative;
+        bottom: 350px;
+        left: 420px;
+    }
+
+    #tyva_rep {
+        position: relative;
+        bottom: 280px;
+        left: 350px;
+    }
+
+    #irkutsk {
+        position: relative;
+        bottom: 480px;
+        left: 300px;
+    }
+
+    #burat {
+        position: relative;
+        bottom: 480px;
+        left: 250px;
+    }
+
+    #zabay {
+        position: relative;
+        bottom: 480px;
+        left: 180px;
+    }
+
+    #tomsk {
+        position: relative;
+        bottom: 500px;
+        right: 250px;
+    }
 }
 
 @media only screen and (min-width: 1900px) {
@@ -823,6 +890,73 @@ body {
         bottom: 1100px;
         left: 780px;
     }
+
+    /*Сибирский регион*/
+    #krasnoyar {
+        position: relative;
+        bottom: 1200px;
+        left: 700px;
+    }
+
+    #tomsk {
+        position: relative;
+        bottom: 700px;
+        right: 250px;
+    }
+
+    #omsk {
+        position: relative;
+        bottom: 600px;
+        right: 250px;
+    }
+
+    #novosib {
+        position: relative;
+        bottom: 500px;
+        right: 670px;
+    }
+
+    #altai {
+        position: relative;
+        bottom: 350px;
+        right: 950px;
+    }
+
+    #kemer {
+        position: relative;
+        bottom: 550px;
+        right: 1060px;
+    }
+
+    #khakas {
+        position: relative;
+        bottom: 550px;
+        left: 620px;
+    }
+
+    #tyva_rep {
+        position: relative;
+        bottom: 430px;
+        left: 550px;
+    }
+
+    #irkutsk {
+        position: relative;
+        bottom: 780px;
+        left: 400px;
+    }
+
+    #burat {
+        position: relative;
+        bottom: 680px;
+        left: 350px;
+    }
+
+    #zabay {
+        position: relative;
+        bottom: 680px;
+        left: 280px;
+    }
 }
 
 @media only screen and (min-width: 3800px) {
@@ -1225,6 +1359,73 @@ body {
         position: relative;
         bottom: 2250px;
         left: 1580px;
+    }
+
+    /*Сибирский регион*/
+    #krasnoyar {
+        position: relative;
+        bottom: 1900px;
+        left: 1500px;
+    }
+
+    #tomsk {
+        position: relative;
+        bottom: 700px;
+        right: 250px;
+    }
+
+    #omsk {
+        position: relative;
+        bottom: 600px;
+        right: 250px;
+    }
+
+    #novosib {
+        position: relative;
+        bottom: 500px;
+        right: 670px;
+    }
+
+    #altai {
+        position: relative;
+        bottom: 350px;
+        right: 950px;
+    }
+
+    #kemer {
+        position: relative;
+        bottom: 550px;
+        right: 1060px;
+    }
+
+    #khakas {
+        position: relative;
+        bottom: 550px;
+        left: 620px;
+    }
+
+    #tyva_rep {
+        position: relative;
+        bottom: 430px;
+        left: 550px;
+    }
+
+    #irkutsk {
+        position: relative;
+        bottom: 780px;
+        left: 400px;
+    }
+
+    #burat {
+        position: relative;
+        bottom: 680px;
+        left: 350px;
+    }
+
+    #zabay {
+        position: relative;
+        bottom: 680px;
+        left: 280px;
     }
 }
 

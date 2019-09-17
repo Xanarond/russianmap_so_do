@@ -12,40 +12,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
     <script type="text/javascript" src="js/raphael-min.js"></script>
     <script type="text/javascript" src="js/russian-map.js"></script>
-    <script>
-        // запрос на получение json регионов
-        window.onload = function () {
-            fetch('./js/data/siberia_reg.json').then(function (response) {
-                response.json().then(function (data) {
-                    new RussianMap({
-                        viewPort: data.viewPort,
-                        mapId: 'siberia_region',
-                        width: 1500,
-                        height: 1000,
-                        // дефолтовые атрибуты для контуров регионов
-                        defaultAttr: {
-                            fill: '#615dff', // цвет которым закрашивать
-                            stroke: '#ffffff', // цвет границы
-                            'stroke-width': 1, // ширина границы
-                            'stroke-linejoin': 'round' // скруглять углы
-                        },
-                        mouseMoveAttr: {
-                            fill: '#25669e'
-                        },
-                        /*onMouseMove: function (event) {
-                            console.log('mouse on ' + this.region.name);
-                        },
-                        onMouseOut: function (event) {
-                            console.log('out on ' + this.region.name);
-                        },*/
-                        onMouseClick: function (event) {
-                            console.log('clicked on ' + this.region.name);
-                        }
-                    }, data.regions);
-                });
-            });
-        };
-    </script>
     <title>Document</title>
 </head>
 <body>
@@ -56,16 +22,52 @@
         </div>
     </div>
     <div class="col-md-6">
-        <canvas id="total"></canvas>
+        <canvas id="sb_total"></canvas>
     </div>
 </div>
 <div class="col-md-12">
     <div class="row justify-content-center ">
-        <div id="siberia_region">
+        <img src="img/sib.svg" alt="" id="img_full">
+    </div>
+</div>
+<div class="col-md-12">
+    <div class="row">
+        <div class="col-2">
+            <canvas id="krasnoyar"></canvas>
+        </div>
+        <div class="col-2">
+            <canvas id="omsk"></canvas>
+        </div>
+        <div class="col-2">
+            <canvas id="tomsk"></canvas>
+        </div>
+        <div class="col-2">
+            <canvas id="novosib"></canvas>
+        </div>
+        <div class="col-2">
+            <canvas id="altai"></canvas>
+        </div>
+        <div class="col-2">
+            <canvas id="kemer"></canvas>
+        </div>
+        <div class="col-2">
+            <canvas id="khakas"></canvas>
+        </div>
+        <div class="col-2">
+            <canvas id="tyva_rep"></canvas>
+        </div>
+        <div class="col-2">
+            <canvas id="irkutsk"></canvas>
+        </div>
+        <div class="col-2">
+            <canvas id="burat"></canvas>
+        </div>
+        <div class="col-2">
+            <canvas id="zabay"></canvas>
         </div>
     </div>
 </div>
 <object src="img/cr.svg"></object>
 </body>
-<!--<script src="js/charts.js"></script>-->
+<script src="js/charts/sb_charts.js"></script>
 </html>

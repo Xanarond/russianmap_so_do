@@ -1370,62 +1370,62 @@ body {
 
     #tomsk {
         position: relative;
-        bottom: 700px;
-        right: 250px;
+        bottom: 1300px;
+        right: 350px;
     }
 
     #omsk {
         position: relative;
-        bottom: 600px;
-        right: 250px;
+        bottom: 1200px;
+        right: 400px;
     }
 
     #novosib {
         position: relative;
-        bottom: 500px;
-        right: 670px;
+        bottom: 1000px;
+        right: 1270px;
     }
 
     #altai {
         position: relative;
-        bottom: 350px;
-        right: 950px;
+        bottom: 650px;
+        right: 1750px;
     }
 
     #kemer {
         position: relative;
-        bottom: 550px;
-        right: 1060px;
+        bottom: 950px;
+        right: 2160px;
     }
 
     #khakas {
         position: relative;
-        bottom: 550px;
-        left: 620px;
+        bottom: 950px;
+        left: 1220px;
     }
 
     #tyva_rep {
         position: relative;
-        bottom: 430px;
-        left: 550px;
+        bottom: 830px;
+        left: 950px;
     }
 
     #irkutsk {
         position: relative;
-        bottom: 780px;
-        left: 400px;
+        bottom: 1580px;
+        left: 900px;
     }
 
     #burat {
         position: relative;
-        bottom: 680px;
-        left: 350px;
+        bottom: 1280px;
+        left: 650px;
     }
 
     #zabay {
         position: relative;
-        bottom: 680px;
-        left: 280px;
+        bottom: 1280px;
+        left: 480px;
     }
 }
 
